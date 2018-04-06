@@ -23,7 +23,7 @@ def The_Number_guessing_game():
         else:
             print()
             print("Congrates you got it right :) The number was", Number)
-            print("You guessed it with", Gueses , " atempts left")
+            print("You guessed it with", Gueses ,"atempts left")
         
 
             break
@@ -33,11 +33,14 @@ def The_Number_guessing_game():
         print('Sorry you reached the maximum number of tries')
         print('The number was', Number)
 
-def No_press_buttons(characters):
+
+def No_press_buttons(charchters):
     npb = ""
-    characters = "qwertyuiopasdfghjklzxcvbnmQWRETYUIOPASDFGHJKLZXCVBNM!@#$%^&*\|]}[{':;',.<>?"
+    charchters = "qwertyuiopasdfghjklzxcvbnmQWRETYUIOPASDFGHJKLZXCVBNM!@#$%^&*\|]}[{':;',.<>?"
     for npb in range(npb):
         print("Thats not a number.")
+    if input(charchters):
+        print("Can you please type y for YES and n for NO")
     
 
         
@@ -45,13 +48,12 @@ def No_press_buttons(characters):
 
 while input("Shall we play a game? [y|n] ") == 'y':
     The_Number_guessing_game()
-
-    if input(charchters):
-        print("Can you please type y for YES and n for NO")
-
-    elif input('Shall we play a game? [y|n]') == 'n':
-        print("Ok, GoodBye")
+    
+if input == 'n': 
+    print("Ok, GoodBye")
    
+
+
 
 
 
