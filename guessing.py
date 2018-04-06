@@ -56,13 +56,19 @@ def The_Number_guessing_game():
 
 
 
-
-while input("Shall we play a game? [y|n] ") == 'y':
+# So this would be the Main part of the code:
+#while input("Shall we play a game? [y|n] ") == 'y':
+# So we already had either a while or for loop in the function call so all we need to do is:
+start = input("Shall we play a game? [y|n] ")
+if(start.lower()=='y' || start.lower() =='yes'):
     The_Number_guessing_game()
+elif start.lower()=="n" || start.lower() == "no":
 
-    if input(characters):
-        print("Can you please type y for YES and n for NO")
 
-    elif input('Shall we play a game? [y|n]') == 'n':
-        print("Ok, GoodBye")
+
+    #if input(characters):
+    #    print("Can you please type y for YES and n for NO")
+    #
+    #elif input('Shall we play a game? [y|n]') == 'n':
+    #    print("Ok, GoodBye")
 
